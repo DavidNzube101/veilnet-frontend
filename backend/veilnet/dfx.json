@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "canisters": {
+    "veilnet_backend": {
+      "type": "motoko",
+      "main": "src/veilnet_backend/main.mo"
+    },
+    "veilnet_frontend": {
+      "type": "assets",
+      "source": [
+        "src/veilnet_frontend/assets"
+      ],
+      "dependencies": [
+        "veilnet_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}

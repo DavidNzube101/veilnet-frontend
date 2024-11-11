@@ -1,0 +1,194 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #000033, #282f60);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .signup-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+  }
+  
+  .title {
+    color: #845bd8;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    transition: 0.5s;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  input:focus ~ label,
+  input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #845bd8;
+    font-size: 0.8rem;
+  }
+  
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #845bd8;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  
+  input:focus ~ .line,
+  input:valid ~ .line {
+    transform: scaleX(1);
+  }
+  
+  .submit-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #845bd8;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background: #845bd8;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #845bd8,
+                0 0 25px #845bd8,
+                0 0 50px #845bd8,
+                0 0 100px #845bd8;
+  }
+  
+  .submit-btn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .submit-btn .circle {
+    position: absolute;
+    background: #845bd8;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+      opacity: 0.5;
+    }
+    100% {
+      width: 500px;
+      height: 500px;
+      opacity: 0;
+    }
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .login-link a {
+    color: #845bd8;
+    text-decoration: none;
+  }
+  
+  .cyber-circuit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(to right, rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: circuit 20s linear infinite;
+  }
+  
+  @keyframes circuit {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+  
+  .error-message {
+    color: #ff4444;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .signup-box {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    input, label {
+      font-size: 0.9rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }

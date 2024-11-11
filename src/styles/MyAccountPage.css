@@ -1,0 +1,68 @@
+.account-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .account-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .account-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .account-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .account-bio {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .account-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .edit-profile-btn {
+    padding: 10px 20px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .account-posts h2 {
+    margin-bottom: 15px;
+  }
+  
+  .post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+  }
